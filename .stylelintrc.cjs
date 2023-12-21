@@ -3,6 +3,7 @@ module.exports = {
   plugins: ['stylelint-order'],
   customSyntax: 'postcss',
   rules: {
+    'selector-class-pattern': null,
     'declaration-empty-line-before': null,
     'at-rule-no-unknown': [
       true,

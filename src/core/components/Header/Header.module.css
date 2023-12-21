@@ -1,0 +1,21 @@
+.root {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+
+  background-color: #fff;
+}
+
+.navItem {
+  padding: var(--space-8) var(--space-12);
+
+  color: var(--gray-700);
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--gray-800);
+
+    background-color: var(--gray-50);
+    border-radius: var(--radius-sm);
+  }
+}

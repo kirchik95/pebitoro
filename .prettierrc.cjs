@@ -21,11 +21,18 @@ module.exports = {
     '^lodash$',
     '<THIRD_PARTY_MODULES>',
     '^classnames$',
+    '',
 
-    '^@/(.*)$',
+    '^@ui/(.*)$',
+    '',
+
+    '^@shared/(.*)$',
     '',
 
     '^@core/(.*)$',
+    '',
+
+    '^@features/(.*)$',
     '',
 
     '^[../]',

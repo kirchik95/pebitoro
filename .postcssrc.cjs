@@ -10,7 +10,7 @@ module.exports = {
       preserve: false,
     }),
     postcssGlobalData({
-      files: ['./src/styles/media.css', './src/styles/variables.css'],
+      files: ['./src/core/styles/media.css'],
     }),
     postcssCustomMedia(),
   ],

@@ -3,8 +3,10 @@
     "rootDir": "./src",
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"],
+      "@ui/*": ["src/ui/*"],
+      "@shared/*": ["src/shared/*"],
       "@core/*": ["src/core/*"],
+      "@features/*": ["src/features/*"],
       "@assets/*": ["src/assets/*"]
     },
     "plugins": [{ "name": "typescript-plugin-css-modules" }],

@@ -7,6 +7,7 @@ import { history, store } from '@core/redux/store';
 
 import App from './App.tsx';
 
+import '@core/styles/variables.css';
 import './main.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
