@@ -4,9 +4,13 @@ Boost your productivity with our cutting-edge habit tracking app, seamlessly int
 
 ## Getting started
 
+Install
+
 ```
 npm install
 ```
+
+Start
 
 ```
 npm run dev

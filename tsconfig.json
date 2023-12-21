@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
+    "rootDir": "./src",
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
-      "@core/*": ["src/core/*"]
+      "@core/*": ["src/core/*"],
+      "@assets/*": ["src/assets/*"]
     },
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "target": "ES2020",
