@@ -1,0 +1,10 @@
+.root {
+  position: relative;
+
+  padding: var(--space-12);
+
+  background-color: var(--base-white);
+  border-radius: var(--radius-3xl);
+
+  box-shadow: var(--shadow-lg);
+}

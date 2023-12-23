@@ -1,5 +1,7 @@
 :root {
   /* Colors */
+  --base-white: #fff;
+  --base-black: #000;
   --gray-25: #fcfcfd;
   --gray-50: #f9fafb;
   --gray-100: #f2f4f7;
@@ -38,4 +40,32 @@
 
   /* Border radis */
   --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 10px;
+  --radius-2xl: 16px;
+  --radius-3xl: 20px;
+  --radius-4xl: 24px;
+
+  /* Typography */
+  --title-xs: 20px;
+  --title-sm: 24px;
+  --title-md: 36px;
+  --title-lg: 48px;
+  --title-xl: 60px;
+  --title-2xl: 72px;
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 14px;
+  --text-lg: 16px;
+  --text-xl: 18px;
+
+  /* Shadows */
+  --shadow-xs: 0px 1px 2px 0px rgb(16 24 40 / 5%);
+  --shadow-sm: 0px 1px 2px 0px rgb(16 24 40 / 6%), 0px 1px 3px 0px rgb(16 24 40 / 10%);
+  --shadow-md: 0px 2px 4px -2px rgb(16 24 40 / 6%), 0px 4px 8px -2px rgb(16 24 40 / 10%);
+  --shadow-lg: 0px 4px 6px -2px rgb(16 24 40 / 3%), 0px 12px 16px -4px rgb(16 24 40 / 8%);
+  --shadow-xl: 0px 8px 8px -4px rgb(16 24 40 / 3%), 0px 20px 24px -4px rgb(16 24 40 / 8%);
+  --shadow-2xl: 0px 24px 48px -12px rgb(16 24 40 / 18%);
+  --shadow-3xl: 0px 32px 64px -12px rgb(16 24 40 / 14%);
 }
