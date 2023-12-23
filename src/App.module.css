@@ -1,3 +1,7 @@
 .root {
   padding: 0;
 }
+
+.main {
+  padding-top: var(--space-24);
+}

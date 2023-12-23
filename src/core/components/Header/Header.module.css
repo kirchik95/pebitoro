@@ -1,8 +1,13 @@
 .root {
-  padding-top: var(--space-16);
-  padding-bottom: var(--space-16);
-
   background-color: #fff;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+  height: 72px;
 }
 
 .navItem {
@@ -10,6 +15,7 @@
 
   color: var(--gray-700);
   font-weight: 600;
+  line-height: 24px;
   text-decoration: none;
 
   &:hover {

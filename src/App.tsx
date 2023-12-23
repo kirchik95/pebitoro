@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
+import { Container } from '@ui/Container';
+
 import { Header } from '@core/components/Header';
 
 import s from './App.module.css';
@@ -11,14 +13,16 @@ function App() {
   return (
     <div className={s.root}>
       <Header />
-      <main>
-        <Routes>
-          {ROUTES.map((route) => {
-            const Element = route.element;
+      <main className={s.main}>
+        <Container>
+          <Routes>
+            {ROUTES.map((route) => {
+              const Element = route.element;
 
-            return <Route key={route.path} path={route.path} element={<Element />} />;
-          })}
-        </Routes>
+              return <Route key={route.path} path={route.path} element={<Element />} />;
+            })}
+          </Routes>
+        </Container>
       </main>
     </div>
   );
