@@ -1,10 +1,12 @@
-@import url('node_modules/modern-normalize/modern-normalize.css');
+@import url('../node_modules/modern-normalize/modern-normalize.css');
 
 body {
   margin: 0;
 
   color: var(--gray-700);
   font-size: 16px;
+
+  background-color: var(--gray-25);
 }
 
 code {

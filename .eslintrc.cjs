@@ -42,7 +42,7 @@ module.exports = {
           { pattern: '@shared/**', group: 'internal', position: 'after' },
           { pattern: '@core/**', group: 'internal', position: 'after' },
           { pattern: '@features/**', group: 'internal', position: 'after' },
-          { pattern: 'assets/**', group: 'internal', position: 'after' },
+          { pattern: '@assets/**', group: 'internal', position: 'after' },
           { pattern: './*.module.css', group: 'index', position: 'after' },
         ],
         'newlines-between': 'always',
