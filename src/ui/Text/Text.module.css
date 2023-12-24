@@ -1,0 +1,28 @@
+.text {
+  margin: 0;
+
+  &_xs {
+    font-size: var(--text-xs);
+    line-height: 18px;
+  }
+
+  &_sm {
+    font-size: var(--text-sm);
+    line-height: 20px;
+  }
+
+  &_md {
+    font-size: var(--text-md);
+    line-height: 24px;
+  }
+
+  &_lg {
+    font-size: var(--text-lg);
+    line-height: 28px;
+  }
+
+  &_xl {
+    font-size: var(--text-lg);
+    line-height: 30px;
+  }
+}

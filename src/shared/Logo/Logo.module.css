@@ -1,7 +1,7 @@
 .root {
   font-size: 24px;
   font-weight: 600;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 
   a {
     color: var(--gray-800);

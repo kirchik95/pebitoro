@@ -1,6 +1,7 @@
 .root {
   position: relative;
 
+  width: 100%;
   padding: var(--space-12);
 
   background-color: var(--base-white);
