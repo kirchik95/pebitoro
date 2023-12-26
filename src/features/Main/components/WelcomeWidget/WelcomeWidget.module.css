@@ -4,8 +4,8 @@
   left: 50%;
   z-index: 1;
 
-  width: calc(100% - var(--space-12));
-  height: calc(100% - var(--space-12));
+  width: calc(100% - var(--space-20));
+  height: calc(100% - var(--space-20));
 
   background-repeat: no-repeat;
 

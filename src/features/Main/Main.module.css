@@ -1,5 +1,5 @@
 .grid {
-  grid-template-columns: 61% 38%;
+  grid-template-columns: 65% 34%;
   gap: var(--space-12);
   height: 400px;
 }

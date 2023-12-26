@@ -1,5 +1,6 @@
 .root {
   padding: var(--space-24) var(--space-24);
+  overflow: hidden;
 }
 
 .header {
@@ -13,16 +14,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 28px;
-  min-width: 28px;
+  height: 24px;
+  min-width: 24px;
   padding: 0;
 
   background: none;
-  border-radius: var(--radius-lg);
+  border-color: var(--gray-200);
+  border-radius: var(--radius-md);
   cursor: pointer;
 
   svg path {
-    stroke: var(--gray-500);
+    stroke: var(--gray-700);
   }
 
   &:first-child svg {
@@ -46,9 +48,12 @@
 }
 
 .content {
+  position: relative;
+
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   row-gap: var(--space-24);
+  overflow: hidden;
 }
 
 .days {
@@ -87,6 +92,8 @@
     border-radius: var(--radius-xl);
 
     cursor: pointer;
+
+    transition: background-color 0.2s ease-in-out;
 
     &:hover {
       background-color: var(--gray-200);
