@@ -7,5 +7,5 @@
   background-color: var(--base-white);
   border-radius: var(--radius-3xl);
 
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-2xl);
 }

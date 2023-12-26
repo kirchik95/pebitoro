@@ -1,0 +1,39 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+  padding: var(--spacing-8) var(--spacing-16);
+
+  color: var(--base-white);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  line-height: var(--text-lh-sm);
+
+  background-color: var(--primary-600);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: all 200ms cubic-bezier(0.21, 1.02, 0.73, 1);
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.secondary {
+  color: var(--gray-700);
+
+  background-color: initial;
+  border-color: var(--gray-300);
+}
+
+.primary svg path {
+  fill: #fff;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

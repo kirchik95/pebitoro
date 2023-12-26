@@ -14,18 +14,18 @@
   --gray-800: #182230;
   --gray-900: #101828;
   --gray-950: #0c111d;
-  --brand-primary-25: #f6fefc;
-  --brand-primary-50: #f0fdf9;
-  --brand-primary-100: #ccfbef;
-  --brand-primary-200: #99f6e0;
-  --brand-primary-300: #5fe9d0;
-  --brand-primary-400: #2ed3b7;
-  --brand-primary-500: #15b79e;
-  --brand-primary-600: #0e9384;
-  --brand-primary-700: #107569;
-  --brand-primary-800: #125d56;
-  --brand-primary-900: #134e48;
-  --brand-primary-950: #0a2926;
+  --primary-25: #f6fefc;
+  --primary-50: #f0fdf9;
+  --primary-100: #ccfbef;
+  --primary-200: #99f6e0;
+  --primary-300: #5fe9d0;
+  --primary-400: #2ed3b7;
+  --primary-500: #15b79e;
+  --primary-600: #0e9384;
+  --primary-700: #107569;
+  --primary-800: #125d56;
+  --primary-900: #134e48;
+  --primary-950: #0a2926;
 
   /* Spacing */
   --space-2: 2px;

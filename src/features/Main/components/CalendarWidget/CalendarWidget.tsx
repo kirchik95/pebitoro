@@ -2,7 +2,10 @@ import * as React from 'react';
 import { add, eachDayOfInterval, format, getDay, isSameMonth, parse, startOfDay } from 'date-fns';
 import cn from 'classnames';
 
+import { Button } from '@ui/Button';
 import { Widget } from '@ui/Widget';
+
+import { Svg } from '@shared/Svg';
 
 import { DATE_FORMAT } from './constants';
 import { getStartAndEndDates } from './helpers';
@@ -40,12 +43,16 @@ export const CalendarWidget = ({ className }: CalendarWidgetProps) => {
   return (
     <Widget className={cn(s.root, className)}>
       <div className={s.header}>
-        <button onClick={handlePreviousMonth}>{'<'}</button>
+        <Button className={s.button} theme="secondary" onClick={handlePreviousMonth}>
+          <Svg name="chevron" width={20} height={20} />
+        </Button>
         <div className={s.title}>
           <div className={s.month}>{format(firstDayCurrentMonth, 'MMMM')}</div>
           <div className={s.year}>{format(firstDayCurrentMonth, 'yyyy')}</div>
         </div>
-        <button onClick={handleNextMonth}>{'>'}</button>
+        <Button className={s.button} theme="secondary" onClick={handleNextMonth}>
+          <Svg name="chevron" width={20} height={20} />
+        </Button>
       </div>
       <div className={s.days}>
         <div>Mon</div>
