@@ -19,6 +19,8 @@ interface CalendarWidgetProps {
 
 export const CalendarWidget = ({ className }: CalendarWidgetProps) => {
   const [currentMonth, setCurrentMonth] = React.useState(format(new Date(), 'MMMM yyyy'));
+  const [direction, setDirection] = React.useState<number | undefined>();
+  const [isAnimating, setIsAnimating] = React.useState(false);
 
   const { startDay, endDay } = getStartAndEndDates(currentMonth);
   const firstDayCurrentMonth = parse(currentMonth, DATE_FORMAT, new Date());
@@ -30,15 +32,29 @@ export const CalendarWidget = ({ className }: CalendarWidgetProps) => {
   });
 
   const handlePreviousMonth = () => {
+    if (isAnimating) return;
+
     const prevMonth = add(firstDayCurrentMonth, { months: -1 });
 
     setCurrentMonth(format(prevMonth, DATE_FORMAT));
+    setDirection(-1);
+    setIsAnimating(true);
   };
 
   const handleNextMonth = () => {
+    if (isAnimating) return;
+
     const prevMonth = add(firstDayCurrentMonth, { months: 1 });
 
     setCurrentMonth(format(prevMonth, DATE_FORMAT));
+    setDirection(1);
+    setIsAnimating(true);
+  };
+
+  const variants = {
+    enter: (direction: number) => ({ x: `${100 * direction}%` }),
+    middle: { x: '0%' },
+    exit: (direction: number) => ({ x: `${-100 * direction}%` }),
   };
 
   return (
@@ -64,18 +80,15 @@ export const CalendarWidget = ({ className }: CalendarWidgetProps) => {
         <div>Sat</div>
         <div>Sun</div>
       </div>
-      <AnimatePresence mode="popLayout" initial={false}>
+      <AnimatePresence mode="popLayout" initial={false} custom={direction} onExitComplete={() => setIsAnimating(false)}>
         <motion.div
           className={s.content}
           key={currentMonth}
           initial="enter"
           animate="middle"
           exit="exit"
-          variants={{
-            enter: { x: '100%' },
-            middle: { x: '0%' },
-            exit: { x: '-100%' },
-          }}
+          variants={variants}
+          custom={direction}
           transition={{ type: 'tween' }}
         >
           {days.map((day) => (
